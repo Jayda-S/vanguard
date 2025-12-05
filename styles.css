@@ -1,7 +1,9 @@
-/* CSS BY YOUR NAME */
+/* CSS BY Jayda Saenz */
 
 /* IMPORTED FONTS*/
-/* IMPORT "INTER" FROM GOOGLE FONTS"
+/* IMPORT "INTER" FROM GOOGLE FONTS"*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
 
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -63,6 +65,54 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+
+body {
+    font-family:'Inter', sans-serif;
+}
+
+header {
+    background-color: var(--black);
+    
+    display:block;
+    grid-template-columns: 1fr 1fr;
+    padding: 1fr;
+}
+
+h1 {
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+}
+
+nav {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 

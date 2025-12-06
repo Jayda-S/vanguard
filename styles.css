@@ -74,18 +74,20 @@ header {
     background-color: var(--black);
     display:block;
     grid-template-columns: 1fr 1fr;
-    padding: 1fr;
 }
 
 h1 {
     color: var(--blue);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     justify-self: center;
     align-self: center;
     position: relative;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-right: 12rem;
+    margin-right: 3rem;
+    margin-left: 1rem;
+    margin: 0 auto;
 }
 
 nav {
@@ -97,14 +99,13 @@ nav {
 
 nav ul{
     list-style: none;
-    align-content: left;
+    text-align: right;
     grid-column: 1/3;
     max-height: 0;
     overflow: hidden;
     margin: 0;
     padding: 0;
     text-align:start;
-    
 }
 
 nav li a{
@@ -144,6 +145,7 @@ label span {
     height: 0.25rem;
     justify-self: end;
     transition: background-color 0.3s ease-out;
+
 }
 
 label span:before, label span:after {
@@ -157,11 +159,11 @@ label span:before, label span:after {
 }
 
 label span::before {
-    top: 1rem;
+    top: 0.75rem;
 }
 
 label span::after {
-    bottom: -8px;
+    top: -0.75rem;
 }
 
 nav input {
@@ -242,7 +244,8 @@ h2, h3 {
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
  h1::before{
     content: "";
-    left:-.5rem;
+    top:1rem;
+    left:-4rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
@@ -427,7 +430,7 @@ footer {
     background-color: var(--black);
     color: var(--white);
     display:grid;
-    place-items: center;
+    margin: 0 auto;
     padding: 2rem;
 }
 
@@ -444,8 +447,9 @@ footer p{
 
 form {
     font-size: 1rem;
-    display: flex;
-    flex-direction: column;
+    margin: 1.5rem 2rem 2rem 3rem;
+    display: grid;
+    margin: 0 auto;
 }
 
 form input[type=text] {
@@ -462,16 +466,21 @@ label {
 }
 
 textarea {
-    padding: 2rem;
+    background-color: var(--white);
+    margin: 0.25rem 0 1rem 0;
+    width: 85%;
+    height: 40px;
     border: 3px solid var(--blue);
-    margin-bottom: 3rem;
+    padding: 2rem;
+    height: 80px;
 }
 
 form input[type=submit] {
     background-color: var(--blue);
     color: var(--white);
     border: none;
-    padding: 1rem 1.5rem;
+    padding: 0.75rem;
+    width: 100%;
     font-size: 1.15rem;
     font-weight: bold;
     border-radius: 10px;
@@ -497,60 +506,13 @@ input[type=submit]:hover {
     color: var(--blue);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 .bar {
     animation: stepUp 1s ease-in-out forwards;
 }
 
-
-/* Hover/click transitions */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MEDIA QUERIES (MEDIUM) */ 
-
+@media screen and (min-width: 800px) {
     #results {
         grid-template-columns: 1fr 1fr;
     }
@@ -565,5 +527,65 @@ input[type=submit]:hover {
         width: 50%;
     }
 
+nav label{
+    display: none;
+}
+
+nav ul {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: none;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#tables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#barChart {
+    width: 45vw;
+    margin: 0;
+
+}
+
+th, td {
+    padding: 1rem;
+}
+
+}
 
 /* MEDIA QUERIES (LARGE) */
+@media screen and (min-width: 1024px) {
+
+    body
+
+    nav label{
+    display: none;
+}
+
+nav ul {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: none;
+}
+
+
+#services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#submit-button {
+    margin-top: 1rem;
+}
+}

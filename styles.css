@@ -119,6 +119,7 @@ nav {
 
 
 
+
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
@@ -139,14 +140,31 @@ nav {
     overflow: hidden;
 }
 
+#innovation h2 {
+    color: var(--white);
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-top: 10rem;
+}
 
+#innovation p {
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
+#innovation button {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 14rem;
 
-
-
-
-
-
+}
 
 
 
@@ -164,6 +182,118 @@ nav {
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
 
 }
+
+#ourExpertise h2 {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+
+}
+
+#ourExpertise p {
+    color: var(--charcoal);
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: 0 1rem 1rem 1rem;
+}
+
+#offer h2 {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+
+}
+
+#services {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    color: var(--white);
+}
+
+#services div {
+    background-color: var(--blue);
+    margin: 0 1.25rem 1.25rem 1.25rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#offer h3{
+    font-size: 1.25rem;
+    padding: 2rem;
+    font-weight: bold;
+    margin: -1rem;
+}
+
+#offer p {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+#results {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1rem 1.25rem 1rem 1.25rem;
+}
+
+#results h2 {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+#results p {
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: 0 1.25rem 1rem 1.25rem;
+}
+
+#results p {
+    font-size: 0.9rem;
+    line-height: 1.75;
+}
+
+#results h3{
+    font-size: 1.75rem;
+    padding: 2rem;
+    font-weight: bold;
+}
+
+table {
+    background-color: var(--black);
+    border: 1px solid var(--charcoal);
+    width: 90%;
+    margin: 0 auto 2rem auto;
+}
+
+td {
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+th {
+    background-color: var(--black);
+    border-bottom: 1px solid var(--charcoal);
+    padding: 1.5rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--charcoal);
+}
+
+td:nth-child(1), th:nth-child(1){
+    border-right: 1px solid var(--charcoal);
+}
+
+td:nth-child(3), th:nth-child(3) {
+    border-left: 1px solid var(--charcoal);
+}
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -184,7 +314,7 @@ nav {
     border-radius: 10px;
     position: relative;
     transition: ;
-    height: 0;
+    height: 1;
 }
 /* THIS ONE IS DONE FOR YOU */
 .bar::after {
@@ -205,10 +335,64 @@ nav {
         height: var(--height);
     }
 }
+
+#contact {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2rem 1.25rem 2rem 1.25rem;
+    text-align: center;
+}
+/* FORM */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 .bar {
     animation: stepUp 1s ease-in-out forwards;
 }
+
+
+/* Hover/click transitions */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERIES (MEDIUM) */ 

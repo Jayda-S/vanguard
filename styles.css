@@ -173,7 +173,7 @@ nav {
 
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
+ h1{
     content: "";
 
     left:-.5rem;
@@ -313,8 +313,8 @@ td:nth-child(3), th:nth-child(3) {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
-    height: 1;
+    transition: height;
+    height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
 .bar::after {
@@ -336,13 +336,72 @@ td:nth-child(3), th:nth-child(3) {
     }
 }
 
-#contact {
+footer {
     background-color: var(--black);
     color: var(--white);
-    padding: 2rem 1.25rem 2rem 1.25rem;
-    text-align: center;
+    display:grid;
+    place-items: center;
+    padding: 2rem;
 }
-/* FORM */
+
+footer h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+footer p{
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+form {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type=text] {
+    background-color: var(--white);
+    margin: 0.25rem 0 1rem 0;
+    width: 95%;
+    height: 40px;
+    border: 3px solid var(--blue);
+}
+
+label {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    padding: 2rem;
+    border: 3px solid var(--blue);
+    margin-bottom: 3rem;
+}
+
+form input[type=submit] {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+#copyright p{
+    font-size: 0.75rem;
+    text-align: center;
+    line-height: 0.1rem;
+}
+
+#copyright a {
+    color: var(--blue);
+}
+
 
 
 

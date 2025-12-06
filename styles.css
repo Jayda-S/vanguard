@@ -72,7 +72,6 @@ body {
 
 header {
     background-color: var(--black);
-    
     display:block;
     grid-template-columns: 1fr 1fr;
     padding: 1fr;
@@ -85,6 +84,8 @@ h1 {
     justify-self: center;
     align-self: center;
     position: relative;
+    padding-top: 2rem;
+    padding-right: 12rem;
 }
 
 nav {
@@ -92,26 +93,43 @@ nav {
     grid-template-columns: 1fr 1fr;
 }
 
+nav ul{
+    list-style: none;
+    text-align: right;
+    grid-column: 1/3;
+}
 
+nav li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
 
+nav a:hover, nav input:hover {
+    background-color: var(--blue);
+    color: var(--black);
+}
 
+nav h2 {
+    visibility: hidden;
+}
 
+nav label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1.5rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+label span {
+    display:block;
+    position: relative;
+    background-color: var(--white);
+    justify-self: end;
+    transition: background-color 0.3s ease-out;
+}
 
 
 
@@ -126,6 +144,7 @@ nav {
 .container {
     width: 90%;
     max-width: 1200px;
+    min-width: 400px;
     margin: 0 auto;
 }
 
@@ -138,6 +157,7 @@ nav {
     text-align: center;
     padding: 1rem;
     overflow: hidden;
+    box-shadow: inset 0 18px 10px -10px var(--blue);
 }
 
 #innovation h2 {
@@ -168,19 +188,15 @@ nav {
 
 
 
-
-
-
-
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
- h1{
+ h1::before{
     content: "";
-
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
+    position: absolute;
+    animation: float 3s ease-in-out infinite;
 }
 
 #ourExpertise h2 {
